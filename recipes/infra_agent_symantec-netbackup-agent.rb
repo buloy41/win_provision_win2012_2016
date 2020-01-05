@@ -13,9 +13,9 @@ get_dcenter = dcenter_location(node['hostname'])
 svr_envi = svr_environment(node['hostname'])
 
 if svr_envi == 'true'
-  check = node['hostname'][8]
+  check = node['hostname'][6]
 else
-  check = node['hostname'][5]
+  check = node['hostname'][3]
 end
 
 case check
